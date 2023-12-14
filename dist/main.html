@@ -8,8 +8,8 @@
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
 		<link href="styles.css" rel="stylesheet">
-		<link href="app.css" rel="stylesheet">        
-		<link href="bvi.css" rel="stylesheet">
+		<link href="app.css" rel="stylesheet">
+        	<link href="bvi.css" rel="stylesheet">
 	</head>
 
 	<body class="body page-template-default page page-id-9 color-schemes-bvi">
@@ -158,8 +158,8 @@
 							<p class="section-title__paragraph blue">Учим при помощи современных технологий</p>
 							<p class="section-title__paragraph white">Просто подключайтесь и&nbsp;занимайтесь — все материалы уже&nbsp;внутри</p>
 						</h3>
-						<div class="advantages-card" data-gsap="data-card1">
-							<div class="advantages-card__illustration bvi-hide">
+						<div class="advantages-card">
+							<div class="advantages-card__illustration bvi-hide" data-gsap="data-card1-img">
 								<picture class="picture advantages-card__bg bvi-hide">
 									<source type="image/webp" srcset="assets/images/card-bg.webp"><img class="picture__img" src="assets/images/card-bg.png">
 								</picture>
@@ -167,13 +167,13 @@
 									<source type="image/webp" srcset="assets/images/tutorials.webp"><img class="picture__img" src="assets/images/tutorials.png">
 								</picture>
 							</div>
-							<div class="advantages-card__description">
+							<div class="advantages-card__description" data-gsap="data-card1-text">
 								<h3 class="advantages-card__title">Интерактивный учебник</h3>
 								<div class="advantages-card__text">Умная платформа сразу проверяет сделанные задания и дает полный отчет успеваемости ученика</div>
 							</div>
 						</div>
-						<div class="advantages-card" data-gsap="data-card2">
-							<div class="advantages-card__illustration bvi-hide">
+						<div class="advantages-card">
+							<div class="advantages-card__illustration bvi-hide" data-gsap="data-card2-img">
 								<picture class="picture advantages-card__bg bvi-hide">
 									<source type="image/webp" srcset="assets/images/card-bg.webp"><img class="picture__img" src="assets/images/card-bg.png">
 								</picture>
@@ -181,13 +181,13 @@
 									<source type="image/webp" srcset="assets/images/app.webp"><img class="picture__img" src="assets/images/app.png">
 								</picture>
 							</div>
-							<div class="advantages-card__description">
+							<div class="advantages-card__description" data-gsap="data-card2-text">
 								<h3 class="advantages-card__title">Мобильное приложение</h3>
 								<div class="advantages-card__text">Полный доступ к урокам, домашкам, словарю и аудио в мобильных приложениях для iOS и Android</div>
 							</div>
 						</div>
-						<div class="advantages-card" data-gsap="data-card3">
-							<div class="advantages-card__illustration bvi-hide">
+						<div class="advantages-card">
+							<div class="advantages-card__illustration bvi-hide" data-gsap="data-card3-img">
 								<picture class="picture advantages-card__bg bvi-hide">
 									<source type="image/webp" srcset="assets/images/card-bg.webp"><img class="picture__img" src="assets/images/card-bg.png">
 								</picture>
@@ -195,13 +195,13 @@
 									<source type="image/webp" srcset="assets/images/videos.webp"><img class="picture__img" src="assets/images/videos.png">
 								</picture>
 							</div>
-							<div class="advantages-card__description">
+							<div class="advantages-card__description" data-gsap="data-card3-text">
 								<h3 class="advantages-card__title">1000+ видео с субтитрами</h3>
 								<div class="advantages-card__text">Субтитры для сериалов и фильмов, словарь для браузера и переводчик текстов песен в Яндекс.Музыке</div>
 							</div>
 						</div>
-						<div class="advantages-card" data-gsap="data-card4">
-							<div class="advantages-card__illustration bvi-hide">
+						<div class="advantages-card">
+							<div class="advantages-card__illustration bvi-hide" data-gsap="data-card4-img">
 								<picture class="picture advantages-card__bg bvi-hide">
 									<source type="image/webp" srcset="assets/images/card-bg.webp"><img class="picture__img" src="assets/images/card-bg.png">
 								</picture>
@@ -209,7 +209,7 @@
 									<source type="image/webp" srcset="assets/images/talking-clubs.webp"><img class="picture__img" src="assets/images/talking-clubs.png">
 								</picture>
 							</div>
-							<div class="advantages-card__description">
+							<div class="advantages-card__description" data-gsap="data-card4-text">
 								<h3 class="advantages-card__title">Разговорные клубы</h3>
 								<div class="advantages-card__text">Практика разговорного английского в видео-чате. Под присмотром учителя и без ограничений по времени</div>
 							</div>
@@ -276,8 +276,8 @@
 					<div class="progress container">
 						<h3 class="progress__title section-title">Наглядный прогресс</h3>
 						<div class="progress-card">
-							<div class="progress-card__text">Детальная статистика успеваемости и эффективность затрат на обучение всегда под рукой</div>
-							<div class="progress-card__illustration bvi-hide">
+							<div class="progress-card__text" data-gsap="data-progress-text">Детальная статистика успеваемости и эффективность затрат на обучение всегда под рукой</div>
+							<div class="progress-card__illustration bvi-hide" data-gsap="data-progress-img">
 								<picture class="picture progress-card__bg">
 									<source type="image/webp" srcset="assets/images/card-bg.webp"><img class="picture__img" src="assets/images/card-bg.png">
 								</picture>
@@ -389,10 +389,10 @@
 				</div>
 			</footer>
 		</div>
-	        <script src="bvi.js"></script>
-	        <script>
-	            new isvek.Bvi();
-	        </script>
+        <script src="bvi.js"></script>
+        <script>
+            new isvek.Bvi();
+        </script>
 	</body>
 
 </html>
