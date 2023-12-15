@@ -49,7 +49,7 @@
 			<div class="header__mobile-menu mobile" data-mobile-menu><a class="header__contacts-link header__mobile-link phone" href="#">+7 (499) 704-05-66</a><a class="header__contacts-link header__mobile-link email" href="#">companies@skyeng.ru</a></div>
 			<main class="main">
 				<section class="main-hero container">
-					<div class="main-hero__inner">
+					<div class="main-hero__inner" data-gsap="data-hero">
 						<div class="main-hero__inner-bg desktop-devices bvi-hide">
 							<picture class="picture">
 								<source type="image/webp" srcset="assets/images/main-hero__bg.webp"><img class="picture__img" src="assets/images/main-hero__bg.png">
@@ -69,17 +69,17 @@
 							</picture>
 						</div>
 						<div class="main-hero__col left">
-							<h1 class="main-hero__title">+1 уровень английского по&nbsp;шкале&nbsp;CEFR за&nbsp;72&nbsp;часа&nbsp;занятий с&nbsp;преподавателем</h1>
-							<p class="main-hero__desk">ОАНО ДПО «СКАЕНГ»</p>
+							<h1 class="main-hero__title" data-gsap="data-hero-title">+1 уровень английского по&nbsp;шкале&nbsp;CEFR за&nbsp;72&nbsp;часа&nbsp;занятий с&nbsp;преподавателем</h1>
+							<p class="main-hero__desk" data-gsap="data-hero-desk">ОАНО ДПО «СКАЕНГ»</p>
 						</div>
 						<div class="main-hero__col right">
-							<div class="main-hero__steps" data-steps-top="2">
+							<div class="main-hero__steps" data-steps-top="2" data-gsap="data-hero-steps">
 								<p class="main-hero__steps-text" data-steps-text="1">Шаг 1 из 2</p>
 								<p class="main-hero__steps-back hidden" data-steps-back="1">Назад</p>
 							</div>
 							<div class="main-hero__forms">
-								<form class="main-hero__form" data-step-form="1"><input class="main-hero__form-input" placeholder="Имя" required><input class="main-hero__form-input" type="email" placeholder="your@email.com" required><input class="main-hero__form-input" type="tel" data-mask-phone required placeholder="+7 (___) ___-__-__"><button class="main-hero__form-button" type="submit" data-step-btn="1">Получить предложение</button>
-									<p class="main-hero__form-policy">Нажимая на кнопку, вы принимаете условия <a href="#">политики конфиденциальности</a></p>
+								<form class="main-hero__form" data-step-form="1"><input class="main-hero__form-input" placeholder="Имя" required data-gsap="data-hero-input1"><input class="main-hero__form-input" type="email" placeholder="your@email.com" required data-gsap="data-hero-input2"><input class="main-hero__form-input" type="tel" data-mask-phone required placeholder="+7 (___) ___-__-__" data-gsap="data-hero-input3"><button class="main-hero__form-button" type="submit" data-step-btn="1" data-gsap="data-hero-submit">Получить предложение</button>
+									<p class="main-hero__form-policy" data-gsap="data-hero-policy">Нажимая на кнопку, вы принимаете условия <a href="#">политики конфиденциальности</a></p>
 								</form>
 								<form class="main-hero__form hidden" data-step-form="2" data-step-btn="2"><input class="main-hero__form-input" placeholder="Компания" required><input class="main-hero__form-input" placeholder="ИНН" data-parsley-minlength="9" data-parsley-maxlength="10" required><button class="main-hero__form-button second" type="submit">Получить предложение</button>
 									<p class="main-hero__form-policy">Нажимая на кнопку, вы принимаете условия <a href="#">политики конфиденциальности</a></p>
@@ -94,11 +94,11 @@
 							<p class="section-title__paragraph blue">Учиться онлайн удобно и выгодно</p>
 							<p class="section-title__paragraph white">Вам не нужно искать офлайн-преподавателя, выделять помещение в офисе под занятия и мотивировать сотрудников</p>
 						</h3>
-						<div class="education-slider bvi-hide">
+						<div class="education-slider bvi-hide" data-gsap="data-slider">
 							<div class="education-slider__section desc">
 								<div class="education-slider__text text">
-									<div class="education-slider__pagination pagination"></div>
-									<div class="text-slider swiper">
+									<div class="education-slider__pagination pagination" data-gsap="data-slider-remote"></div>
+									<div class="text-slider swiper" data-gsap="data-slider-text">
 										<div class="text-slider__wrapper swiper-wrapper">
 											<div class="text-slide swiper-slide">
 												<div class="text-slide__title">Наглядный прогресс</div>
@@ -115,13 +115,13 @@
 										</div>
 									</div>
 								</div>
-								<div class="education-slider__buttons"><button class="education-slider__btn left" education-slider-btn-left><svg class="education-slider__btn-svg left" width="54" height="54" viewbox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<div class="education-slider__buttons" data-gsap="data-slider-remote"><button class="education-slider__btn left" education-slider-btn-left><svg class="education-slider__btn-svg left" width="54" height="54" viewbox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path fill-rule="evenodd" clip-rule="evenodd" d="M27 53.6666C41.7276 53.6666 53.6667 41.7276 53.6667 27C53.6667 12.2724 41.7276 0.333313 27 0.333313C12.2724 0.333313 0.333374 12.2724 0.333374 27C0.333374 41.7276 12.2724 53.6666 27 53.6666ZM27.5523 40.8856L39.5523 28.8856C40.5937 27.8442 40.5937 26.1558 39.5523 25.1144L27.5523 13.1144L23.7811 16.8856L31.2288 24.3333H15V29.6666H31.2288L23.7811 37.1144L27.5523 40.8856Z" fill="white" fill-opacity="0.64"></path>
 										</svg></button><button class="education-slider__btn right" education-slider-btn-right><svg class="education-slider__btn-svg right" width="54" height="54" viewbox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path fill-rule="evenodd" clip-rule="evenodd" d="M27 53.6666C41.7276 53.6666 53.6667 41.7276 53.6667 27C53.6667 12.2724 41.7276 0.333313 27 0.333313C12.2724 0.333313 0.333374 12.2724 0.333374 27C0.333374 41.7276 12.2724 53.6666 27 53.6666ZM27.5523 40.8856L39.5523 28.8856C40.5937 27.8442 40.5937 26.1558 39.5523 25.1144L27.5523 13.1144L23.7811 16.8856L31.2288 24.3333H15V29.6666H31.2288L23.7811 37.1144L27.5523 40.8856Z" fill="white" fill-opacity="0.64"></path>
 										</svg></button></div>
 							</div>
-							<div class="education-slider__section illustration">
+							<div class="education-slider__section illustration" data-gsap="data-slider-img">
 								<div class="education-slider__img img">
 									<div class="img-slider swiper">
 										<div class="img-slider__wrapper swiper-wrapper">
@@ -290,7 +290,7 @@
 				</section>
 				<div id="proposal"></div>
 				<section class="main-hero container main-hero_proposal main-proposal" id="proposal">
-					<div class="main-hero__inner">
+					<div class="main-hero__inner" data-gsap="data-proposal">
 						<div class="main-hero__inner-bg desktop-devices bvi-hide">
 							<picture class="picture">
 								<source type="image/webp" srcset="assets/images/main-hero__bg.webp"><img class="picture__img" src="assets/images/main-hero__bg.png">
@@ -311,21 +311,21 @@
 						</div>
 						<div class="main-hero__col left">
 							<div class="main-proposal__pretext" data-pretext>
-								<h1 class="main-proposal__title">Получите индивидуальное предложение</h1>
+								<h1 class="main-proposal__title" data-gsap="data-proposal-title">Получите индивидуальное предложение</h1>
 								<div class="main-proposal__list">
-									<div class="main-proposal__list-item">
+									<div class="main-proposal__list-item" data-gsap="data-proposal-li">
 										<div class="main-proposal__list-icon"><svg width="12" height="24" viewbox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<circle cx="6" cy="17" r="6" fill="white" fill-opacity="0.48"></circle>
 											</svg></div>
 										<div class="main-proposal__list-text">Определим потребности компании</div>
 									</div>
-									<div class="main-proposal__list-item">
+									<div class="main-proposal__list-item" data-gsap="data-proposal-li">
 										<div class="main-proposal__list-icon"><svg width="12" height="24" viewbox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<circle cx="6" cy="17" r="6" fill="white" fill-opacity="0.48"></circle>
 											</svg></div>
 										<div class="main-proposal__list-text">Рассчитаем стоимость обучения</div>
 									</div>
-									<div class="main-proposal__list-item">
+									<div class="main-proposal__list-item" data-gsap="data-proposal-li">
 										<div class="main-proposal__list-icon"><svg width="12" height="24" viewbox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<circle cx="6" cy="17" r="6" fill="white" fill-opacity="0.48"></circle>
 											</svg></div>
@@ -339,13 +339,13 @@
 							</div>
 						</div>
 						<div class="main-hero__col right">
-							<div class="main-hero__steps" data-steps-top="4">
+							<div class="main-hero__steps" data-steps-top="4" data-gsap="data-proposal-steps">
 								<p class="main-hero__steps-text" data-steps-text="3">Шаг 1 из 2</p>
 								<p class="main-hero__steps-back hidden" data-steps-back="3">Назад</p>
 							</div>
 							<div class="main-hero__forms">
-								<form class="main-hero__form" data-step-form="3"><input class="main-hero__form-input" placeholder="Имя" required><input class="main-hero__form-input" type="email" placeholder="your@email.com" required><input class="main-hero__form-input" type="tel" data-mask-phone required placeholder="+7 (___) ___-__-__"><button class="main-hero__form-button" type="submit" data-step-btn="1">Получить предложение</button>
-									<p class="main-hero__form-policy">Нажимая на кнопку, вы принимаете условия <a href="#">политики конфиденциальности</a></p>
+								<form class="main-hero__form" data-step-form="3"><input class="main-hero__form-input" placeholder="Имя" required data-gsap="data-proposal-input1"><input class="main-hero__form-input" type="email" placeholder="your@email.com" required data-gsap="data-proposal-input2"><input class="main-hero__form-input" type="tel" data-mask-phone required placeholder="+7 (___) ___-__-__" data-gsap="data-proposal-input3"><button class="main-hero__form-button" type="submit" data-step-btn="1" data-gsap="data-proposal-submit">Получить предложение</button>
+									<p class="main-hero__form-policy" data-gsap="data-proposal-policy">Нажимая на кнопку, вы принимаете условия <a href="#">политики конфиденциальности</a></p>
 								</form>
 								<form class="main-hero__form hidden" data-step-form="4"><input class="main-hero__form-input" placeholder="Компания" required><input class="main-hero__form-input" placeholder="ИНН" data-parsley-minlength="9" data-parsley-maxlength="10" required><button class="main-hero__form-button second" type="submit" data-step-btn="4">Получить предложение</button>
 									<p class="main-hero__form-policy">Нажимая на кнопку, вы принимаете условия <a href="#">политики конфиденциальности</a></p>
@@ -389,10 +389,10 @@
 				</div>
 			</footer>
 		</div>
-        <script src="bvi.js"></script>
-        <script>
-            new isvek.Bvi();
-        </script>
+	        <script src="bvi.js"></script>
+	        <script>
+	            new isvek.Bvi();
+	        </script>
 	</body>
 
 </html>
