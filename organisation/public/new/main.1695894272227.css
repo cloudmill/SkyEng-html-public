@@ -440,13 +440,13 @@ body .bvi-body[data-bvi-letterspacing=big]:not(.bvi-no-styles) * {
     .header {
         padding: 3.4vw 0;
     }
-    .header__logo {
+    /* .header__logo {
         width: 29.375vw;
     }
 
     .header__logo img {
         width: 100%;
-    }
+    } */
 
     /* .header__bvi {
         width: 10vw;
