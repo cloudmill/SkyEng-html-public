@@ -367,6 +367,7 @@ body {
 
 .bvi-body .docs__body {
     width: 100% !important;
+    border: none;
 }
 
 .bvi-body p {
@@ -399,6 +400,8 @@ body .bvi-body[data-bvi-letterspacing=average]:not(.bvi-no-styles) * {
 body .bvi-body[data-bvi-letterspacing=big]:not(.bvi-no-styles) * {
     letter-spacing: 4px !important;
 }
+
+
 
 
 
