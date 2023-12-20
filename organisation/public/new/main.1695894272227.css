@@ -381,6 +381,13 @@ body {
     text-decoration: underline !important;
 }
 
+.bvi-body table, 
+.bvi-body tr,
+.bvi-body td,
+.bvi-body th {
+    border: 2px solid #000000;
+}
+
 
 
 
