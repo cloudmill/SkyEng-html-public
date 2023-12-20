@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Стоимость партнерских программ дополнительного образования</title>
+    <link rel="shortcut icon" type="image/png" href="https://media.lpgenerator.ru/favicons/367266/1489251761.png" />
+    <link rel="icon" type="image/png" href="https://media.lpgenerator.ru/favicons/367266/1489251761.png" />
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div id="adobe-dc-view"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+    document.addEventListener("adobe_dc_view_sdk.ready", function(){
+        var adobeDCView = new AdobeDC.View({clientId: "9df6ae954ab84aa88bb76b7ebed5f3c3", divId: "adobe-dc-view"});
+        var dt = new Date();
+        adobeDCView.previewFile({
+            content:{location: {url: "https://cdn-user10101.skyeng.ru/skyeng-for-business/pdf/b2b_price_partners.pdf?ts=" + dt.getTime()}},
+            metaData:{fileName: "b2b_price_partners.pdf"}
+        }, {showAnnotationTools: false, showLeftHandPanel: false});
+    });
+</script>
+</body>
+</html>
