@@ -377,6 +377,10 @@ body {
     display: block !important;
 }
 
+.bvi-body a {
+    text-decoration: underline !important;
+}
+
 
 
 
