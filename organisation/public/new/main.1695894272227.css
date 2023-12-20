@@ -385,7 +385,19 @@ body {
 .bvi-body tr,
 .bvi-body td,
 .bvi-body th {
-    border: 2px solid #000000;
+    border: 1px solid #000000;
+}
+
+body .bvi-body[data-bvi-letterspacing=normal]:not(.bvi-no-styles) * {
+    letter-spacing: 0 !important;
+}
+
+body .bvi-body[data-bvi-letterspacing=average]:not(.bvi-no-styles) * {
+    letter-spacing: 2px !important;
+}
+
+body .bvi-body[data-bvi-letterspacing=big]:not(.bvi-no-styles) * {
+    letter-spacing: 4px !important;
 }
 
 
