@@ -35,6 +35,7 @@ body {
     font-size: 16px;
     line-height: 1.33;
     font-variant-numeric: lining-nums proportional-nums;
+    max-width: 100vw;
 }
 
 .container {
@@ -404,7 +405,17 @@ body .bvi-body[data-bvi-letterspacing=big]:not(.bvi-no-styles) * {
     letter-spacing: 4px !important;
 }
 
+body .bvi-body[data-bvi-lineheight=normal]:not(.bvi-no-styles) * {
+    line-height: 1.5 !important;
+}
 
+body .bvi-body[data-bvi-lineheight=average]:not(.bvi-no-styles) * {
+    line-height: 2 !important;
+}
+
+body .bvi-body[data-bvi-lineheight=big]:not(.bvi-no-styles) * {
+    line-height: 2.5 !important;
+}
 
 
 
