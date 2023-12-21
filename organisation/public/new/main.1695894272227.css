@@ -346,7 +346,8 @@ body {
 
 
 
-body .bvi-body {
+body .bvi-body,
+body.bvi-active {
     width: 100vw !important;
 }
 
@@ -418,14 +419,6 @@ body .bvi-body[data-bvi-lineheight=average]:not(.bvi-no-styles) * {
 body .bvi-body[data-bvi-lineheight=big]:not(.bvi-no-styles) * {
     line-height: 2.5 !important;
 }
-
-body .bvi-body .bvi-link-fixed-top {
-    position: fixed !important;
-    top: 20px !important;
-    right: 120px !important;
-    z-index: 999999 !important;
-}
-
 
 
 
