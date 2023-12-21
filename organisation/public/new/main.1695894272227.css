@@ -346,7 +346,9 @@ body {
 
 
 
-
+body .bvi-body {
+    width: 100vw !important;
+}
 
 .bvi-btn {
     width: 70px; 
