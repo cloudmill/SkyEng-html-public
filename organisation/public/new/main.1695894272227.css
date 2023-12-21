@@ -387,6 +387,7 @@ body.bvi-active {
 
 .bvi-body a {
     text-decoration: underline !important;
+    word-wrap: break-word;
 }
 
 .bvi-body table, 
