@@ -419,6 +419,12 @@ body .bvi-body[data-bvi-lineheight=big]:not(.bvi-no-styles) * {
     line-height: 2.5 !important;
 }
 
+body .bvi-body .bvi-link-fixed-top {
+    position: fixed !important;
+    top: 20px !important;
+    right: 120px !important;
+    z-index: 999999 !important;
+}
 
 
 
