@@ -420,8 +420,9 @@ body .bvi-body[data-bvi-lineheight=big]:not(.bvi-no-styles) * {
     line-height: 2.5 !important;
 }
 
-
-
+body .bvi-body a.bvi-link {
+    letter-spacing: 0 !important;
+}
 
 
 
