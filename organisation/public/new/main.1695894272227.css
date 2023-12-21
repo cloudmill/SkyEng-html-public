@@ -349,6 +349,7 @@ body {
 body .bvi-body,
 body.bvi-active {
     width: 100vw !important;
+    word-wrap: break-word;
 }
 
 .bvi-btn {
@@ -387,7 +388,6 @@ body.bvi-active {
 
 .bvi-body a {
     text-decoration: underline !important;
-    word-wrap: break-word;
 }
 
 .bvi-body table, 
